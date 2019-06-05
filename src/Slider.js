@@ -558,11 +558,11 @@ export default class Slider extends PureComponent {
   };
 
   _renderThumbImage = () => {
-    const { thumbImage } = this.props;
+    const { thumbImage,thumbStyle } = this.props;
 
     if (!thumbImage) return;
 
-    return <Image source={thumbImage} />;
+    return <Image source={thumbImage} style={thumbStyle}/>;
   };
 }
 
